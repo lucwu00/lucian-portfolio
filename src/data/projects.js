@@ -19,7 +19,7 @@ export const projects = [
         learned: 
         "Wiring a cloud vision API into a .NET backend and normalising messy product data.",
         github: "https://github.com/lucwu00/zwe_SingInk",
-        demo: "#",
+        demo: "https://lucwu00-github-io.vercel.app/",
         image: null,
     },
 
