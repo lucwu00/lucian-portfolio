@@ -13,7 +13,7 @@ export const projects = [
             "Snap a photo to identify a printer model via AWS Rekognition", 
             "Compatibility search across printers and cartridges",
             "Full-stack: React front end talking to a NET Core API",
-            "Possess a separate admin dashboard for full CRUD content management, accessed through /admin/login to the original url linked and the password is SingInk-Admin-2025-Secret-Token for the demo sake only. Do not alter anything of the content without permission "
+            "Possess a separate admin dashboard for full CRUD content management, accessed through /admin/login to the original live demo url linked and the password is SingInk-Admin-2025-Secret-Token for the demo sake only. Do not alter anything of the content without permission "
         ],
         challenge: 
         "Turning noisy image-recognition results into reliable, matchable printer models.",
@@ -21,7 +21,7 @@ export const projects = [
         "Wiring a cloud vision API into a .NET backend and normalising messy product data.",
         github: "https://github.com/lucwu00/zwe_SingInk",
         demo: "https://zwe-singink-frontend-taupe.vercel.app",
-        image: null,
+        image: ["/public/project_thumbnails/singink/singink_customer.png", "/public/project_thumbnails/singink/singink_admin.png"],
     },
 
     {

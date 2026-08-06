@@ -13,13 +13,17 @@ function initials(title) {
 function ProjectCard({ project, index }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-all hover:-translate-y-1 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10 md:flex-row">
-      {project.image && (
-        <div className="overflow-hidden border-line md:w-2/5 md:border-r">
-          <img
-            src={project.image}
-            alt={`${project.title} screenshot`}
-            className="aspect-16/10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+      {project.images && project.images.length > 0 && (
+        <div className="grid gap-2 md:w-2/5 md:border-r md:border-line">
+          {project.images.map((src, i) => (
+            <div key={i} className="overflow-hidden">
+              <img
+                src={src}
+                alt={`${project.title} screenshot ${i + 1}`}
+                className="aspect-16/10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          ))}
         </div>
       )}
 
