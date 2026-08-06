@@ -21,7 +21,10 @@ export const projects = [
         "Wiring a cloud vision API into a .NET backend and normalising messy product data.",
         github: "https://github.com/lucwu00/zwe_SingInk",
         demo: "https://zwe-singink-frontend-taupe.vercel.app",
-        image: ["/public/project_thumbnails/singink/singink_customer.png", "/public/project_thumbnails/singink/singink_admin.png"],
+        image: [
+          "/project_thumbnails/singink/singink_customer.png", 
+          "/project_thumbnails/singink/singink_admin.png",
+        ],
     },
 
     {
