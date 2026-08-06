@@ -7,7 +7,7 @@ export const projects = [
         id: "singink",
         title: "SingInk",
         blurb:
-        "A printer and ink compatibility platform that helps people find the right cartridges for theri printer, including image-based printer recognition.",
+        "A printer and ink compatibility platform that helps people find the right cartridges for their printer, including image-based printer recognition.",
         tech: ["React", ".NET Core", "MySQL", "AWS Rekognition"],
         features: [
             "Snap a photo to identify a printer model via AWS Rekognition", 
@@ -19,7 +19,7 @@ export const projects = [
         learned: 
         "Wiring a cloud vision API into a .NET backend and normalising messy product data.",
         github: "https://github.com/lucwu00/zwe_SingInk",
-        demo: "https://lucwu00-github-io.vercel.app/",
+        demo: "https://zwe-singink-frontend-taupe.vercel.app",
         image: null,
     },
 
