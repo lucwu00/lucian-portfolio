@@ -20,7 +20,7 @@ function ProjectCard({ project, index }) {
               <img
                 src={img.src}
                 alt={`${project.title} - ${img.label || "screenshot " + (i + 1)}`}
-                className="aspect-16/10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full object-contsin transition-transform duration-500 group-hover:scale-105"
               />
               {img.label && (
                 <figcaption className="bg-surface px-3 py-1.5 text-center font-mono text-xs text-muted">
