@@ -90,7 +90,7 @@ function ProjectCard({ project, index }) {
           </p>
         )}
 
-        <div className="mt-auto flex gap-4 border-t border-line pt-4">
+        <div className="mt-6 flex gap-4 border-t border-line pt-4">
           {project.github && (
             <a
               href={project.github}
