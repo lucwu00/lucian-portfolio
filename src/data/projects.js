@@ -22,8 +22,8 @@ export const projects = [
         github: "https://github.com/lucwu00/zwe_SingInk",
         demo: "https://zwe-singink-frontend-taupe.vercel.app",
         images: [
-          {src = "/project_thumbnails/singink/singink_customer.png", label: "Customer Site"} , 
-          {src = "/project_thumbnails/singink/singink_admin.png", label: "Admin Site"},
+          {src : "/project_thumbnails/singink/singink_customer.png", label: "Customer Site"} , 
+          {src : "/project_thumbnails/singink/singink_admin.png", label: "Admin Site"},
         ],
     },
 
