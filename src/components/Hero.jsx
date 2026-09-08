@@ -50,11 +50,11 @@ function Hero({ setActive }) {
               <code>
                 <span className="text-muted">const</span>{" "}
                 <span className="text-accent">luc</span> = {"{"}
-                {"\n"}  role: <span className="text-glow">"software engineer"</span>,
+                {"\n"}  role: <span className="text-glow">"Software Engineer"</span>,
                 {"\n"}  stack: [<span className="text-glow">"React"</span>,{" "}
                 <span className="text-glow">"Node"</span>,{" "}
                 <span className="text-glow">".NET"</span>],
-                {"\n"}  focus: <span className="text-glow">"useful and profitable web apps"</span>,
+                {"\n"}  focus: <span className="text-glow">"Useful and Profitable Web Apps"</span>,
                 {"\n"}  location: <span className="text-glow">"Singapore"</span>,
                 {"\n"}  openToWork: 
                 <span className="text-accent"> true</span>,

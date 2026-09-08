@@ -1,5 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import { projects } from "../data/projects";
+import { useState } from "react";
 
 function initials(title) {
   return title
@@ -10,24 +11,78 @@ function initials(title) {
     .toUpperCase();
 }
 
+function Carousel({ slot, title }) {
+  const [index, setIndex] = useState(0);
+
+  if (!slot || slot.length === 0) return null;
+
+  const isCarousel = slot.length > 1;
+  const current = slot[index];
+  const go = (dir) => setIndex((prev) => Math.max(0, Math.min(slot.length - 1, prev + dir)));
+
+  return (
+    <div className="relative overflow-hidden">
+      <figure className="overflow-hidden">
+        <img
+          src={current.src}
+          alt={`${title} - ${current.label || "screenshot " + (index + 1)}`}
+          className="h-96 w-full object-contain transition-transform duration-500 group-hover:scale-105"
+        />
+        {current.label && (
+          <figcaption className="bg-surface px-3 py-1.5 text-center font-mono text-xs text-muted">
+            {current.label}
+          </figcaption>
+        )}
+      </figure>
+
+      {isCarousel && (
+        <>
+          {index > 0 && (
+            <button
+              type="button"
+              onClick={() => go(-1)}
+              aria-label="Previous image"
+              className="absolute left-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 font-mono text-sm text-muted backdrop-blur transition-colors hover:bg-accent hover:text-white"
+            >
+              ‹
+            </button>
+          )}
+          {index < slot.length - 1 && (
+            <button
+              type="button"
+              onClick={() => go(1)}
+              aria-label="Next image"
+              className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-surface/80 font-mono text-sm text-muted backdrop-blur transition-colors hover:bg-accent hover:text-white"
+            >
+              ›
+            </button>
+          )}
+
+          <div className="absolute bottom-9 left-1/2 flex -translate-x-1/2 gap-1.5">
+            {slot.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setIndex(i)}
+                aria-label={`Go to image ${i + 1}`}
+                className={`h-1.5 w-1.5 rounded-full transition-colors ${i === index ? "bg-accent" : "bg-muted/40"
+                  }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function ProjectCard({ project, index }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-all hover:-translate-y-1 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10 md:flex-row">
       {project.images && project.images.length > 0 && (
-        <div className="grid gap-2 md:w-2/5 md:border-r md:border-line">
-          {project.images.map((img, i) => (
-            <figure key={i} className="overflow-hidden">
-              <img
-                src={img.src}
-                alt={`${project.title} - ${img.label || "screenshot " + (i + 1)}`}
-                className="w-full object-contsin transition-transform duration-500 group-hover:scale-105"
-              />
-              {img.label && (
-                <figcaption className="bg-surface px-3 py-1.5 text-center font-mono text-xs text-muted">
-                  {img.label}
-                </figcaption>
-              )}
-            </figure>
+        <div className="grid content-center gap-2 md:w-2/5 md:border-r md:border-line">
+          {project.images.map((slot, i) => (
+            <Carousel key={i} slot={slot} title={project.title} />
           ))}
         </div>
       )}
@@ -90,29 +145,41 @@ function ProjectCard({ project, index }) {
           </p>
         )}
 
-        <div className="mt-6 flex gap-4 border-t border-line pt-4">
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm font-medium transition-colors hover:text-accent"
-            >
-              GitHub
-            </a>
-          )}
+        <div className="mt-auto flex gap-6 border-t border-line pt-4">
+  {project.links?.map((link) => (
+    <a
+      key={link.label}
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium hover:underline"
+    >
+      {link.label}
+    </a>
+  ))}
 
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm font-medium transition-colors hover:text-accent"
-            >
-              Live demo
-            </a>
-          )}
-        </div>
+  {!project.links && project.github && project.github !== "#" && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium hover:underline"
+    >
+      GitHub
+    </a>
+  )}
+
+  {!project.links && project.demo && project.demo !== "#" && (
+    <a
+      href={project.demo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium hover:underline"
+    >
+      Live demo
+    </a>
+  )}
+</div>
       </div>
     </article>
   );
