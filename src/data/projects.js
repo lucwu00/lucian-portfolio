@@ -535,4 +535,132 @@ export const projects = [
     ],
   },
 
+  {
+    id: "velvet-oasis",
+    title: "Velvet Oasis — Luxury Hotel Booking Experience",
+    blurb:
+      "An interactive UX design prototype for a modern luxury hotel, providing a streamlined digital journey for discovering rooms, making reservations, exploring event spaces, and accessing hotel amenities.",
+
+    tech: [
+      "Figma",
+      "Canva",
+      "Miro",
+      "UX Design",
+      "Wireframing",
+      "Prototyping"
+    ],
+
+    features: [
+      "Designed a seamless room-discovery and booking journey for Premier Rooms, Superior Rooms, and Royal Suites",
+      "Created interactive flows for exploring hotel facilities, event spaces, restaurants, and the SkyHarmony rooftop bar",
+      "Developed user personas and journey maps for vacationers and business travellers",
+      "Produced wireframes and a high-fidelity interface with consistent navigation and visual hierarchy",
+      "Connected the screens into a clickable Figma prototype simulating the complete guest experience"
+    ],
+
+    challenge:
+      "Organising multiple hotel services into a cohesive user journey while maintaining the premium visual identity, intuitive navigation, and consistency expected from a luxury hospitality platform.",
+
+    learned:
+      "Applying a user-centred UX process from persona development and journey mapping to wireframing, high-fidelity interface design, and interactive prototyping in Figma.",
+
+    links: [
+      {
+        label: "View Figma Prototype",
+        url: "PASTE_YOUR_FIGMA_PROTOTYPE_LINK_HERE"
+      }
+    ],
+
+    images: [
+      [
+        {
+          src: "/project_thumbnails/velvet-oasis/homepage.png",
+          label: "Velvet Oasis — Luxury Hotel Homepage"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/room-selection.png",
+          label: "Room Selection — Premier, Superior and Royal Suites"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/room-booking.png",
+          label: "Room Details and Booking Journey"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/event-space.png",
+          label: "Celestial Ballroom — Event Space"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/skyharmony-bar.png",
+          label: "SkyHarmony Rooftop Bar"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/prototype-flow.png",
+          label: "Interactive Figma Prototype Flow"
+        }
+      ]
+    ]
+  },
+
+  {
+    id: "sghawkers-business-pitch",
+    title: "SGHawkers — Business Idea and Funding Pitch",
+    blurb:
+      "A business proposal for a digital platform designed to improve the online visibility of Singapore hawkers and help customers discover reliable, affordable local food options.",
+
+    tech: [
+      "Business Strategy",
+      "Market Research",
+      "Competitive Analysis",
+      "Financial Planning",
+      "Pitch Development"
+    ],
+
+    features: [
+      "Identified customer and hawker pain points within Singapore’s food and beverage market",
+      "Defined SGHawkers’ value proposition and competitive advantages",
+      "Conducted competitor and market analysis against existing food-discovery platforms",
+      "Developed pilot implementation and expansion plans",
+      "Estimated the required start-up funding, operating budget, profitability, and payback timeline",
+      "Presented the proposed business model and financial potential to a panel of judges"
+    ],
+
+    challenge:
+      "Transforming the SGHawkers concept into a commercially realistic proposal by balancing customer needs, hawker accessibility, competitive positioning, implementation costs, and long-term profitability.",
+
+    learned:
+      "Evaluating a digital product from a business perspective, including identifying market gaps, defining a value proposition, analysing competitors, preparing financial projections, and communicating an idea through a structured funding pitch.",
+
+    links: [
+      {
+        label: "View Business Pitch",
+        url: "/project_documents/sghawkers/sghawkers-business-pitch.pdf"
+      }
+    ],
+
+    images: [
+      [
+        {
+          src: "/project_thumbnails/sghawkers/business-pitch.png",
+          label: "SGHawkers — Business Idea and Funding Pitch"
+        },
+        {
+          src: "/project_thumbnails/sghawkers/pain-points.png",
+          label: "Customer and Hawker Pain-Point Analysis"
+        },
+        {
+          src: "/project_thumbnails/sghawkers/competitive-analysis.png",
+          label: "Market and Competitor Analysis"
+        },
+        {
+          src: "/project_thumbnails/sghawkers/pilot-rollout.png",
+          label: "Pilot Implementation and Rollout Plan"
+        },
+        {
+          src: "/project_thumbnails/sghawkers/financial-plan.png",
+          label: "Funding, Profitability and Payback Projection"
+        }
+      ]
+    ]
+  },
+
 ]

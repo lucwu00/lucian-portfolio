@@ -22,8 +22,13 @@ function Hero({ setActive }) {
             >
               View projects
             </button>
-            <a href="/resume.pdf" className="rounded-full border border-line px-6 py-2.5 text-sm font-medium transition-colors hover:border-accent">
-              Download resume
+            <a
+              href="/Zwe_jobResume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-line px-6 py-2.5 text-sm font-medium transition-colors hover:border-accent"
+            >
+              View resume
             </a>
             <a href="https://github.com/lucwu00" target="_blank" rel="noreferrer" className="rounded-full border border-line px-6 py-2.5 text-sm font-medium transition-colors hover:border-accent">
               GitHub
@@ -56,7 +61,7 @@ function Hero({ setActive }) {
                 <span className="text-glow">".NET"</span>],
                 {"\n"}  focus: <span className="text-glow">"Useful and Profitable Web Apps"</span>,
                 {"\n"}  location: <span className="text-glow">"Singapore"</span>,
-                {"\n"}  openToWork: 
+                {"\n"}  openToWork:
                 <span className="text-accent"> true</span>,
                 {"\n"}  aspiration: <span className="text-glow">"AI Engineer"</span>,
                 {"\n"}

@@ -48,10 +48,11 @@ function Navbar({ active, setActive }) {
           ))}
           <li>
             <a
-              href="/resume.pdf"
+              href="/Zwe_jobResume.pdf"
+              download
               className="rounded-full border border-accent px-4 py-1.5 text-sm font-medium text-accent transition-all hover:bg-accent hover:text-white hover:shadow-lg hover:shadow-accent/30"
             >
-              Resume
+              Download Resume
             </a>
           </li>
         </ul>
@@ -84,11 +85,11 @@ function Navbar({ active, setActive }) {
           ))}
           <li>
             <a
-              href="/resume.pdf"
-              onClick={() => setOpen(false)}
+              href="/Zwe_jobResume.pdf"
+              download
               className="mt-1 inline-block rounded-full border border-accent px-4 py-1.5 text-sm font-medium text-accent"
             >
-              Resume
+              Download Resume
             </a>
           </li>
         </ul>
