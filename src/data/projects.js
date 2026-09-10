@@ -567,38 +567,88 @@ export const projects = [
     links: [
       {
         label: "View Figma Prototype",
-        url: "PASTE_YOUR_FIGMA_PROTOTYPE_LINK_HERE"
+        url: "https://www.figma.com/proto/pQ7PWxeK9xZZonE748A2jc/Untitled?node-id=2008-742&starting-point-node-id=2008%3A742&scaling=scale-down&content-scaling=fixed&t=G4jcEksgsr38kuvP-1https://www.figma.com/proto/pQ7PWxeK9xZZonE748A2jc/Untitled?node-id=1-2&starting-point-node-id=1%3A2&t=wfzpNU6wUq7G8uaW-1"
       }
     ],
 
     images: [
       [
         {
-          src: "/project_thumbnails/velvet-oasis/homepage.png",
+          src: "/project_thumbnails/velvet-oasis/homepage_1.png",
           label: "Velvet Oasis — Luxury Hotel Homepage"
         },
         {
-          src: "/project_thumbnails/velvet-oasis/room-selection.png",
-          label: "Room Selection — Premier, Superior and Royal Suites"
+          src: "/project_thumbnails/velvet-oasis/homepage_2.png",
+          label: "Homepage — Introduction and Featured Experiences"
         },
         {
-          src: "/project_thumbnails/velvet-oasis/room-booking.png",
-          label: "Room Details and Booking Journey"
+          src: "/project_thumbnails/velvet-oasis/room_and_facilities.png",
+          label: "Rooms and Facilities — Overview of Accommodation and Amenities"
         },
         {
-          src: "/project_thumbnails/velvet-oasis/event-space.png",
-          label: "Celestial Ballroom — Event Space"
+          src: "/project_thumbnails/velvet-oasis/room_selection.png",
+          label: "Room Selection"
         },
         {
-          src: "/project_thumbnails/velvet-oasis/skyharmony-bar.png",
-          label: "SkyHarmony Rooftop Bar"
+          src: "/project_thumbnails/velvet-oasis/room_selection_premiere.png",
+          label: "Premier Room — Details and Amenities"
         },
         {
-          src: "/project_thumbnails/velvet-oasis/prototype-flow.png",
-          label: "Interactive Figma Prototype Flow"
+          src: "/project_thumbnails/velvet-oasis/staycation_package.png",
+          label: "Staycation Packages with Good Deals"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/reservation.png",
+          label: "Reservation Journey"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/reservation_for_room.png",
+          label: "Room Reservation"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/contact.png",
+          label: "Contact Page for Enquiries"
+        }
+      ],
+      [
+        {
+          src: "/project_thumbnails/velvet-oasis/dining_selection.png",
+          label: "Dining Selection"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/dining_selection_lumiere_bistro.png",
+          label: "Lumière Bistro — Restaurant Details"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/entertainment_selection.png",
+          label: "Entertainment Selection"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/entertainment_selection_strike_lounge_bowling.png",
+          label: "Strike Lounge — Bowling"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/business_space_selection.png",
+          label: "Business Space Selection — Meeting and Working Facilities"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/business_space_selection_oasis_workpod.png",
+          label: "Oasis WorkPod — Private Workspace"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/shop_selection.png",
+          label: "Shopping Selection"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/shop_selection_patisserie_royale.png",
+          label: "Patisserie Royale — Pastry Shop"
+        },
+        {
+          src: "/project_thumbnails/velvet-oasis/reservation_for_dining_and_facilities.png",
+          label: "Dining and Facility Reservation"
         }
       ]
-    ]
+    ],
   },
 
   {
@@ -633,34 +683,63 @@ export const projects = [
     links: [
       {
         label: "View Business Pitch",
-        url: "/project_documents/sghawkers/sghawkers-business-pitch.pdf"
+        url: "/project_documents/sghawkers-business-pitch/sghawkers-business-pitch.pdf"
       }
     ],
-
     images: [
       [
         {
-          src: "/project_thumbnails/sghawkers/business-pitch.png",
-          label: "SGHawkers — Business Idea and Funding Pitch"
+          src: "/project_thumbnails/sghawkers-business-pitch/business-pitch.png",
+          label: "SGHawkers — Business Idea"
         },
         {
-          src: "/project_thumbnails/sghawkers/pain-points.png",
-          label: "Customer and Hawker Pain-Point Analysis"
+          src: "/project_thumbnails/sghawkers-business-pitch/problem-opportunity.png",
+          label: "Problem and Opportunity"
         },
         {
-          src: "/project_thumbnails/sghawkers/competitive-analysis.png",
-          label: "Market and Competitor Analysis"
+          src: "/project_thumbnails/sghawkers-business-pitch/value_proposition.png",
+          label: "Value Proposition"
         },
         {
-          src: "/project_thumbnails/sghawkers/pilot-rollout.png",
-          label: "Pilot Implementation and Rollout Plan"
+          src: "/project_thumbnails/sghawkers-business-pitch/pain-points.png",
+          label: "Pain Points Identified from Diners and Hawkers"
         },
         {
-          src: "/project_thumbnails/sghawkers/financial-plan.png",
-          label: "Funding, Profitability and Payback Projection"
+          src: "/project_thumbnails/sghawkers-business-pitch/market-analysis.png",
+          label: "Market Analysis"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/competitive-advantages.png",
+          label: "Competitive Advantages and Differentiation"
+        }
+      ],
+      [
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/pilot-rollout_1.png",
+          label: "Implementation: Pilot Plan"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/pilot-rollout_2.png",
+          label: "Implementation: Rollout Plan"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/pilot-rollout_3.png",
+          label: "Timeline for Pilot and Rollout"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/budget-funding.png",
+          label: "Required Budget and Start-Up Funding"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/profitability-timeline.png",
+          label: "Payback and Profitability Timeline"
+        },
+        {
+          src: "/project_thumbnails/sghawkers-business-pitch/return_on_investment.png",
+          label: "SGHawkers — Return on Investment"
         }
       ]
-    ]
+    ],
   },
 
 ]
