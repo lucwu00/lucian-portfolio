@@ -102,6 +102,12 @@ export function ProjectCard({ project, index }) {
           </span>
         </div>
 
+        {project.award && (
+          <p className="mt-3 inline-flex w-fit items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+            {project.award}
+          </p>
+        )}
+
         <ul className="mt-4 flex flex-wrap gap-1.5">
           {project.tech.map((t) => (
             <li
