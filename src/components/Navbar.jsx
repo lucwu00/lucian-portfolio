@@ -32,12 +32,12 @@ function Navbar({ active, setActive }) {
         </button>
 
         {/* Desktop tabs */}
-        <ul className="hidden items-center gap-6 lg:flex">
+        <ul className="hidden items-center gap-4 md:flex lg:gap-7">
           {links.map((link) => (
             <li key={link.id}>
               <button
                 onClick={() => go(link.id)}
-                className={`text-sm transition-colors ${
+                className={`whitespace-nowrap text-sm transition-colors ${
                   active === link.id
                     ? "text-accent"
                     : "text-muted hover:text-ink"
@@ -51,7 +51,7 @@ function Navbar({ active, setActive }) {
             <a
               href="/Zwe_jobResume.pdf"
               download
-              className="rounded-full border border-accent px-4 py-1.5 text-sm font-medium text-accent transition-all hover:bg-accent hover:text-white hover:shadow-lg hover:shadow-accent/30"
+              className="whitespace-nowrap rounded-full border border-accent px-4 py-1.5 text-sm font-medium text-accent transition-all hover:bg-accent hover:text-white hover:shadow-lg hover:shadow-accent/30"
             >
               Download Resume
             </a>
@@ -61,7 +61,7 @@ function Navbar({ active, setActive }) {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="font-mono text-sm lg:hidden"
+          className="font-mono text-sm md:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
         >
@@ -71,7 +71,7 @@ function Navbar({ active, setActive }) {
 
       {/* Mobile tabs */}
       {open && (
-        <ul className="flex flex-col gap-1 border-t border-line px-6 py-3 lg:hidden">
+        <ul className="flex flex-col gap-1 border-t border-line px-6 py-3 md:hidden">
           {links.map((link) => (
             <li key={link.id}>
               <button
