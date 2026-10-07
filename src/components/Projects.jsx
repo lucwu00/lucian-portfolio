@@ -76,7 +76,7 @@ function Carousel({ slot, title }) {
   );
 }
 
-function ProjectCard({ project, index }) {
+export function ProjectCard({ project, index }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-line bg-surface transition-all hover:-translate-y-1 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10 md:flex-row">
       {project.images && project.images.length > 0 && (

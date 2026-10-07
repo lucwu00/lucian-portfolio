@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Hackathons from "./components/Hackathons";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 
@@ -13,6 +14,7 @@ const sections = {
   about: About,
   skills: Skills,
   projects: Projects,
+  hackathons: Hackathons,
   experience: Experience,
   contact: Contact,
 };

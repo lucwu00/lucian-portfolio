@@ -5,6 +5,7 @@ const links = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
+  { id: "hackathons", label: "Hackathons" },
   { id: "experience", label: "Experience" },
   { id: "contact", label: "Contact" },
 ];
@@ -31,7 +32,7 @@ function Navbar({ active, setActive }) {
         </button>
 
         {/* Desktop tabs */}
-        <ul className="hidden items-center gap-7 md:flex">
+        <ul className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
             <li key={link.id}>
               <button
@@ -60,7 +61,7 @@ function Navbar({ active, setActive }) {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="font-mono text-sm md:hidden"
+          className="font-mono text-sm lg:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
         >
@@ -70,7 +71,7 @@ function Navbar({ active, setActive }) {
 
       {/* Mobile tabs */}
       {open && (
-        <ul className="flex flex-col gap-1 border-t border-line px-6 py-3 md:hidden">
+        <ul className="flex flex-col gap-1 border-t border-line px-6 py-3 lg:hidden">
           {links.map((link) => (
             <li key={link.id}>
               <button
