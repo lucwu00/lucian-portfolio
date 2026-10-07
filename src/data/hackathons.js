@@ -17,6 +17,7 @@ export const hackathons = [
       "25+ playable activities, from pinball and a maze chase to a clay studio, charm bar and crew matching as virtual games",
       "Community hub with crews, a looking-for-group board and in-person weekly challenge sign-ups",
       "Future plan as Rooftop Pass accounts that sync online, unlocked by checking the visitor's museum ticket; currently only as MINT2026 for mock demo",
+      "For Museum Pass after account creation and logging in, use MINT2026 for account adherence and record of wins and participations"
     ],
     challenge:
       "Fitting a full visitor journey, a 3D rooftop tour and dozens of mini-games into one fast web app, then resizing every room to match the real rooftop.",
