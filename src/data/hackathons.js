@@ -5,24 +5,28 @@
 export const hackathons = [
   {
     id: "youirl",
-    title: "YOU: IRL",
+    title: "YOU:IRL",
     award: "🏆 1st Prize · Team Extinque",
     blurb:
-      "Team Extinque's first-prize hackathon project: reimagining the MINT Museum of Toys rooftop as YOU: IRL, a youth club where visitors register with their museum ticket, get matched to themed zones, play, and meet people in real life.",
+      "Reimagining the MINT Museum of Toys rooftop as YOU:IRL, a youth club where visitors register with their museum ticket, get matched to themed zones, play, and meet people in real life.",
     tech: ["JavaScript", "WebGL", "Web Audio", "Vercel Serverless", "Upstash Redis"],
     features: [
       "Persona quiz that matches each visitor to the best of four zones: Play, Create, Connect and Showcase",
-      "Interactive 2D floor plan with step-free routes and read-aloud directions",
-      "Guided 3D walkthrough of the rooftop, built on a custom WebGL renderer, with a QR code in every room",
-      "25+ playable activities, from pinball and a maze chase to a clay studio, charm bar and crew matching",
+      "Interactive 2D floor plan with the future step-free routes and read-aloud directions",
+      "Guided 3D walkthrough of the rooftop, built on a custom WebGL renderer, with a QR code for available activities in every room",
+      "25+ playable activities, from pinball and a maze chase to a clay studio, charm bar and crew matching as virtual games",
       "Community hub with crews, a looking-for-group board and in-person weekly challenge sign-ups",
-      "Rooftop Pass accounts that sync online, unlocked by checking the visitor's museum ticket",
+      "Future plan as Rooftop Pass accounts that sync online, unlocked by checking the visitor's museum ticket; currently only as MINT2026 for mock demo",
     ],
     challenge:
       "Fitting a full visitor journey, a 3D rooftop tour and dozens of mini-games into one fast web app, then resizing every room to match the real rooftop.",
     learned:
       "Turning a physical space concept into a digital journey people can test, and iterating fast on judge and user feedback as a team.",
-    links: [{ label: "Live demo", url: "https://youirlluc.vercel.app" }],
+    links: [
+      { label: "Live demo", url: "https://youirlluc.vercel.app" },
+      { label: "Pitch Deck", url: "/project_documents/youirl/youirl_deck.pdf"},
+      { label: "GitHub", url: "https://github.com/lucwu00/You_IRL_Mint_Museum_Toys"}
+    ],
     images: [
       [
         { src: "/project_thumbnails/youirl/welcome.jpg", label: "Sign in with a museum ticket" },
@@ -37,10 +41,9 @@ export const hackathons = [
         { src: "/project_thumbnails/youirl/weekly.jpg", label: "Weekly in-person challenge" },
       ],
       [
-        { src: "/project_thumbnails/youirl/tour_lobby.jpg", label: "3D tour — lift lobby" },
-        { src: "/project_thumbnails/youirl/tour_play.jpg", label: "3D tour — Play Zone" },
-        { src: "/project_thumbnails/youirl/tour_qr.jpg", label: "Scanning a room QR code" },
-        { src: "/project_thumbnails/youirl/tour_showcase.jpg", label: "3D tour — Showcase stage" },
+        { src: "/project_thumbnails/youirl/grp_photo_before_presentation.jpg", label: "Group Photo before Presentation" },
+        { src: "/project_thumbnails/youirl/Your_IRL_cert.jpg", label: "Certificate" },
+        { src: "/project_thumbnails/youirl/grp_photo_with_cert.jpg", label: "Group Photo with certs" },
       ],
     ],
   },
