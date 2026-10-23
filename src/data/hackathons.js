@@ -15,9 +15,7 @@ export const hackathons = [
       "Emergency simulator for local shocks (dental bill, motorcycle repair, clinic visit) showing what savings cover and what's still at risk",
       "Recovery planner with conservative, balanced and optimistic rebuild schedules after a shock",
       "Ask SavvyMoni: an AI assistant grounded in the app's own calculations through tool calls, with explicit consent and a server-side API key",
-      "One engine across Singapore, the Philippines and Myanmar, in six languages: English, Mandarin, Malay, Tamil, Filipino and Burmese",
-      "Benchmark lab comparing adaptive saving with fixed rules over a simulated 26 weeks",
-      "104 automated tests and end-to-end browser flows, including offline use"
+      "One engine across Singapore, the Philippines and Myanmar, in six languages: English, Mandarin, Malay, Tamil, Filipino and Burmese"
     ],
     challenge:
       "Making savings advice safe for income that moves: money set aside in a good week can be needed for rent the next, so every suggestion has to be explainable and never put essentials at risk, from a Singapore student worker to a Myanmar garment worker paid in cash.",
