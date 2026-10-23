@@ -25,6 +25,8 @@ export const hackathons = [
       "Designing a pure, testable finance engine in integer minor units, keeping an LLM grounded in real numbers instead of inventing them, and making one codebase work across currencies, languages and very different levels of banking access.",
     links: [
       { label: "Live demo", url: "https://savvymoniluc.vercel.app" },
+      { label: "Pitch Deck", url: "/project_documents/savvymoni/savvymoni_deck.pdf" },
+      { label: "Project folder", url: "https://onedrive.live.com/my?id=%2Fpersonal%2Fcff61086a24dec14%2FDocuments%2FSavvyMoni%5FASEAN%5FFinancial%5FHealth%5FChallenge%5F2026&viewid=8f059745%2Db9dc%2D46ed%2Da053%2D23a4f63b4572" },
       { label: "GitHub", url: "https://github.com/lucwu00/SavvyMoni" },
       { label: "Sample sheet: Singapore", url: "/project_documents/savvymoni/SavvyMoni-Singapore-student-worker.xlsx", download: true },
       { label: "Sample sheet: Philippines", url: "/project_documents/savvymoni/SavvyMoni-Philippines-delivery-rider.xlsx", download: true },
@@ -34,6 +36,7 @@ export const hackathons = [
       [
         { src: "/project_thumbnails/savvymoni/start.jpg", label: "Pick a country and how you keep records" },
         { src: "/project_thumbnails/savvymoni/overview.jpg", label: "Safe to save this week" },
+        { src: "/project_thumbnails/savvymoni/ai-answer.jpg", label: "Ask SavvyMoni: a what-if answered from the engine" },
         { src: "/project_thumbnails/savvymoni/assistant.jpg", label: "Ask SavvyMoni: AI assistant with consent first" },
         { src: "/project_thumbnails/savvymoni/planner.jpg", label: "Safe-to-save planner" },
         { src: "/project_thumbnails/savvymoni/simulator.jpg", label: "Emergency simulator" },
