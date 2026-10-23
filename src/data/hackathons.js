@@ -25,12 +25,16 @@ export const hackathons = [
       "Designing a pure, testable finance engine in integer minor units, keeping an LLM grounded in real numbers instead of inventing them, and making one codebase work across currencies, languages and very different levels of banking access.",
     links: [
       { label: "Live demo", url: "https://savvymoniluc.vercel.app" },
-      { label: "GitHub", url: "https://github.com/lucwu00/SavvyMoni" }
+      { label: "GitHub", url: "https://github.com/lucwu00/SavvyMoni" },
+      { label: "Sample sheet: Singapore", url: "/project_documents/savvymoni/SavvyMoni-Singapore-student-worker.xlsx", download: true },
+      { label: "Sample sheet: Philippines", url: "/project_documents/savvymoni/SavvyMoni-Philippines-delivery-rider.xlsx", download: true },
+      { label: "Sample sheet: Myanmar", url: "/project_documents/savvymoni/SavvyMoni-Myanmar-garment-worker.xlsx", download: true }
     ],
     images: [
       [
         { src: "/project_thumbnails/savvymoni/start.jpg", label: "Pick a country and how you keep records" },
         { src: "/project_thumbnails/savvymoni/overview.jpg", label: "Safe to save this week" },
+        { src: "/project_thumbnails/savvymoni/assistant.jpg", label: "Ask SavvyMoni: AI assistant with consent first" },
         { src: "/project_thumbnails/savvymoni/planner.jpg", label: "Safe-to-save planner" },
         { src: "/project_thumbnails/savvymoni/simulator.jpg", label: "Emergency simulator" },
         { src: "/project_thumbnails/savvymoni/recovery.jpg", label: "Recovery planner" },

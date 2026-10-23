@@ -151,11 +151,12 @@ export function ProjectCard({ project, index }) {
           </p>
         )}
 
-        <div className="mt-auto flex gap-6 border-t border-line pt-4">
+        <div className="mt-auto flex flex-wrap gap-x-6 gap-y-2 border-t border-line pt-4">
   {project.links?.map((link) => (
     <a
       key={link.label}
       href={link.url}
+      download={link.download ? "" : undefined}
       target="_blank"
       rel="noopener noreferrer"
       className="text-sm font-medium hover:underline"
