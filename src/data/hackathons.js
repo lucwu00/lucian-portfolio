@@ -4,6 +4,46 @@
 
 export const hackathons = [
   {
+    id: "savvymoni",
+    title: "SavvyMoni",
+    blurb:
+      "An adaptive emergency-savings app for people with irregular income, built solo for the ASEAN Financial Health Challenge 2026 (Problem Statement 2). It answers one question every day: how much can I safely save today without missing tomorrow's essentials? Save steadily for the known to stand strongly against the unknown.",
+    tech: ["React 19", "TypeScript", "Vite", "Claude API", "Vercel Serverless", "Playwright"],
+    features: [
+      "Safe-to-save engine that projects cash day by day, protects every bill and a reserve first, and suggests a cautious amount based on how much income varies",
+      "Import a bank or e-wallet spreadsheet, or keep a simple cash book offline; SavvyMoni finds regular income and bills in either",
+      "Emergency simulator for local shocks (dental bill, motorcycle repair, clinic visit) showing what savings cover and what's still at risk",
+      "Recovery planner with conservative, balanced and optimistic rebuild schedules after a shock",
+      "Ask SavvyMoni: an AI assistant grounded in the app's own calculations through tool calls, with explicit consent and a server-side API key",
+      "One engine across Singapore, the Philippines and Myanmar, in six languages: English, Mandarin, Malay, Tamil, Filipino and Burmese",
+      "Benchmark lab comparing adaptive saving with fixed rules over a simulated 26 weeks",
+      "104 automated tests and end-to-end browser flows, including offline use"
+    ],
+    challenge:
+      "Making savings advice safe for income that moves: money set aside in a good week can be needed for rent the next, so every suggestion has to be explainable and never put essentials at risk, from a Singapore student worker to a Myanmar garment worker paid in cash.",
+    learned:
+      "Designing a pure, testable finance engine in integer minor units, keeping an LLM grounded in real numbers instead of inventing them, and making one codebase work across currencies, languages and very different levels of banking access.",
+    links: [
+      { label: "Live demo", url: "https://savvymoniluc.vercel.app" },
+      { label: "GitHub", url: "https://github.com/lucwu00/SavvyMoni" }
+    ],
+    images: [
+      [
+        { src: "/project_thumbnails/savvymoni/start.jpg", label: "Pick a country and how you keep records" },
+        { src: "/project_thumbnails/savvymoni/overview.jpg", label: "Safe to save this week" },
+        { src: "/project_thumbnails/savvymoni/planner.jpg", label: "Safe-to-save planner" },
+        { src: "/project_thumbnails/savvymoni/simulator.jpg", label: "Emergency simulator" },
+        { src: "/project_thumbnails/savvymoni/recovery.jpg", label: "Recovery planner" },
+        { src: "/project_thumbnails/savvymoni/import.jpg", label: "Spreadsheet import review" },
+        { src: "/project_thumbnails/savvymoni/cashbook.jpg", label: "Offline cash book (Myanmar)" },
+        { src: "/project_thumbnails/savvymoni/philippines.jpg", label: "Philippines in pesos" },
+        { src: "/project_thumbnails/savvymoni/asean.jpg", label: "One engine, three countries" },
+        { src: "/project_thumbnails/savvymoni/tamil.jpg", label: "Tamil interface" },
+        { src: "/project_thumbnails/savvymoni/benchmark.jpg", label: "Benchmark lab" },
+      ],
+    ],
+  },
+  {
     id: "youirl",
     title: "YOU:IRL",
     award: "🏆 1st Prize · Team Extinque",
