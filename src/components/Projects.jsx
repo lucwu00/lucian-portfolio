@@ -23,12 +23,28 @@ function Carousel({ slot, title }) {
   return (
     <div className="relative overflow-hidden">
       <figure className="overflow-hidden">
-        <img
-          src={current.src}
-          alt={`${title} - ${current.label || "screenshot " + (index + 1)}`}
-          className="h-96 w-full object-contain transition-transform duration-500 group-hover:scale-105"
-        />
-        {current.label && (
+        {current.href ? (
+          <a href={current.href} download title={`Download ${current.label || "file"}`}>
+            <img
+              src={current.src}
+              alt={`${title} - ${current.label || "file " + (index + 1)}`}
+              className="h-96 w-full object-contain transition-transform duration-500 group-hover:scale-105"
+            />
+          </a>
+        ) : (
+          <img
+            src={current.src}
+            alt={`${title} - ${current.label || "screenshot " + (index + 1)}`}
+            className="h-96 w-full object-contain transition-transform duration-500 group-hover:scale-105"
+          />
+        )}
+        {current.href ? (
+          <figcaption className="bg-surface px-3 py-1.5 text-center font-mono text-xs">
+            <a href={current.href} download className="font-medium text-accent hover:underline">
+              ↓ Download {current.label}
+            </a>
+          </figcaption>
+        ) : current.label && (
           <figcaption className="bg-surface px-3 py-1.5 text-center font-mono text-xs text-muted">
             {current.label}
           </figcaption>

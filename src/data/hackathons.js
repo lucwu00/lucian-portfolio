@@ -26,11 +26,8 @@ export const hackathons = [
     links: [
       { label: "Live demo", url: "https://savvymoniluc.vercel.app" },
       { label: "Pitch Deck", url: "/project_documents/savvymoni/savvymoni_deck.pdf" },
-      { label: "Project folder", url: "https://onedrive.live.com/my?id=%2Fpersonal%2Fcff61086a24dec14%2FDocuments%2FSavvyMoni%5FASEAN%5FFinancial%5FHealth%5FChallenge%5F2026&viewid=8f059745%2Db9dc%2D46ed%2Da053%2D23a4f63b4572" },
       { label: "GitHub", url: "https://github.com/lucwu00/SavvyMoni" },
-      { label: "Sample sheet: Singapore", url: "/project_documents/savvymoni/SavvyMoni-Singapore-student-worker.xlsx", download: true },
-      { label: "Sample sheet: Philippines", url: "/project_documents/savvymoni/SavvyMoni-Philippines-delivery-rider.xlsx", download: true },
-      { label: "Sample sheet: Myanmar", url: "/project_documents/savvymoni/SavvyMoni-Myanmar-garment-worker.xlsx", download: true }
+      { label: "Project folder", url: "https://onedrive.live.com/my?id=%2Fpersonal%2Fcff61086a24dec14%2FDocuments%2FSavvyMoni%5FASEAN%5FFinancial%5FHealth%5FChallenge%5F2026&viewid=8f059745%2Db9dc%2D46ed%2Da053%2D23a4f63b4572" }
     ],
     images: [
       [
@@ -47,6 +44,11 @@ export const hackathons = [
         { src: "/project_thumbnails/savvymoni/asean.jpg", label: "One engine, three countries" },
         { src: "/project_thumbnails/savvymoni/tamil.jpg", label: "Tamil interface" },
         { src: "/project_thumbnails/savvymoni/benchmark.jpg", label: "Benchmark lab" },
+      ],
+      [
+        { src: "/project_thumbnails/savvymoni/sheet-sg.jpg", label: "Singapore sample sheet (.xlsx)", href: "/project_documents/savvymoni/SavvyMoni-Singapore-student-worker.xlsx" },
+        { src: "/project_thumbnails/savvymoni/sheet-ph.jpg", label: "Philippines sample sheet (.xlsx)", href: "/project_documents/savvymoni/SavvyMoni-Philippines-delivery-rider.xlsx" },
+        { src: "/project_thumbnails/savvymoni/sheet-mm.jpg", label: "Myanmar sample sheet (.xlsx)", href: "/project_documents/savvymoni/SavvyMoni-Myanmar-garment-worker.xlsx" },
       ],
     ],
   },
