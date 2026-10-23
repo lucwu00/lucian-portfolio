@@ -10,10 +10,13 @@ export const projects = [
       "A printer and ink compatibility platform that helps people find the right cartridges for their printer, including image-based printer recognition.",
     tech: ["React", ".NET Core", "MySQL", "AWS Rekognition"],
     features: [
-      "Snap a photo to identify a printer model via AWS Rekognition",
-      "Compatibility search across printers and cartridges",
-      "Full-stack: React front end talking to a NET Core API",
-      "Possess a separate admin dashboard for full CRUD content management, accessed through /admin/login to the original live demo url linked and the password is SingInk-Admin-2025-Secret-Token for the demo sake only. Do not alter anything of the content without permission "
+      "Snap a photo to identify a printer model via AWS Rekognition Custom Labels",
+      "Ink Compatibility Checker that matches both ways: cartridges for a printer, or printers for a cartridge",
+      "Error Help: step-by-step diagnostics for printer errors, organised by category with prevention tips",
+      "Purchased Guides: installation and troubleshooting guides locked to the buyer, paid with PayNow",
+      "Repair Booking for printer, PC and laptop repairs with a S$5 refundable deposit",
+      "Clean Architecture .NET Core API (API, Application, Core and Infrastructure layers) behind a React front end, deployed on Vercel, Render and Railway MySQL",
+      "Possess a separate admin dashboard for full CRUD content management, accessed through /admin/login to the original live demo url linked and the password is SingInk-Admin-2025-Secret-Token for the demo sake only. Do not alter anything of the content without permission",
     ],
     challenge:
       "Turning noisy image-recognition results into reliable, matchable printer models.",
@@ -34,9 +37,14 @@ export const projects = [
       "A team-built insurance management platform. I owned the Policy page, the Import page, and their AI features",
     tech: ["React", "Node.js", "SQLite", "OpenAI"],
     features: [
-      "Bulk policy import from Excel with algorithmic validation",
-      "AI-assisted data clean-up and client ID auto-generation",
+      "Bulk client and policy import from Excel with algorithmic validation",
+      "OpenAI-assisted clean-up of messy import data",
+      "Client ID auto-generation in C001 format, filling gaps and de-duplicating clients by NRIC",
+      "Policy IDs generated per client in ClientID-PT## format",
       "Preview and rollback before any import is committed",
+      "Policy & Coverage page: search a client and see a coverage gap analysis across life, health, income protection and savings, with an overall coverage score",
+      "AI gap narrative that explains a client's coverage gaps in plain language",
+      "Add and edit policy forms with duplicate detection, backed by a Policy Store of database-driven policy templates",
     ],
     challenge:
       "Making bulk Excel imports safe — nothing should hit the database until the user has seen and approved it.",
@@ -68,9 +76,13 @@ export const projects = [
       "A Singapore hawker food-ordering platform with separate customer and hawker apps sharing one real-time backend.",
     tech: ["React", "Express", "PostgreSQL", "WebSocket"],
     features: [
-      "Live order updates pushed over WebSockets",
-      "Hawker dashboard: stall open/close, inventory, and waste logging",
-      "Group orders and portion forecasting",
+      "Customer app: browse hawker centres, pick a stall, order from its menu and check out, including group orders",
+      "Live order updates pushed over WebSockets, so a new order appears on the hawker's dashboard instantly",
+      "Hawker overview of today's revenue, orders, live queue and top dishes",
+      "Stall open/close toggle protected by a PIN",
+      "Menu and inventory management, plus a Cashier POS and transaction log for walk-in sales",
+      "Analytics and P&L with revenue by hour, portion forecasting and waste cost trends",
+      "Promotions, Eco Track waste logging, and staff roster and calendar",
     ],
     challenge:
       "Keeping the customer view and the hawker dashboard in sync in real time.",
@@ -118,6 +130,10 @@ export const projects = [
       "Subtree permission model: you view your reports and assign only downward to your subordinates; leaf members see just themselves",
       "Personally requested time break for personal matters will be submitted to the supervisor who will approve and sign in the schedule.",
       "Full task lifecycle with role-gated transitions, append-only audit trail, and an in-app notification inbox with comment threading for each task",
+      "Working-hours privacy boundary: task detail is visible during work hours, and only a reason-free “busy” shows in personal time",
+      "Append-only audit trail of every change to a task",
+      "In-app notification inbox with a comment thread on each task",
+      "Pure, unit-tested domain layer kept separate from the Prisma and Express wiring",
     ],
     challenge:
       "Designing one permission rule from the reporting tree that scales across every role, plus a privacy model that shows detail only inside working hours.",
@@ -135,9 +151,12 @@ export const projects = [
       "A personal library for tracking books I've read and the notes I took, with cover art from the Open Library API.",
     tech: ["Node.js", "Express", "PostgreSQL", "EJS", "Open Library API"],
     features: [
-      "Notes and ratings stored per book",
+      "Personal library of books I've read, each with my notes and a rating",
+      "Add, edit and delete books and their notes",
       "Sorting by title, rating, or date read",
-      "Cover images fetched from an external API with a fallback",
+      "Cover images fetched from the Open Library API, with a fallback when none is found",
+      "Server-rendered pages with Express and EJS",
+      "Books and notes stored in PostgreSQL",
     ],
     challenge:
       "Integrating an external cover API gracefully when a book has no cover.",
@@ -157,9 +176,13 @@ export const projects = [
       "An Android fitness tracker for logging workouts and following progress over time.",
     tech: ["Kotlin", "Jetpack Compose"],
     features: [
+      "Register and log in, with a ready-made test account for reviewers",
       "Workout and exercise logging",
+      "Workout details with tips for each exercise",
+      "How-To library organised by category and subcategory, plus general tips",
+      "Profile page with editable user details",
       "Progress views over time",
-      "Native Android UI built with Jetpack Compose",
+      "Native Android UI in Jetpack Compose, with workouts and users stored locally in Room",
     ],
     challenge:
       "Managing UI state cleanly in a declarative Compose interface.",
@@ -198,6 +221,9 @@ export const projects = [
       "Movie detail screen with a favourites button and favourites screen",
       "Search that fetches live from TMDB and caches results while the screen is open",
       "Offline support with cached movies and error handling",
+      "Register and log in",
+      "Favourites saved locally in Room and kept in sync across the Home and Search tabs",
+      "Retrofit for the TMDB API and Hilt for dependency injection in an MVVM structure",
     ],
     challenge:
       "Providing offline support and sensible caching while keeping a clean layered architecture.",
@@ -234,6 +260,9 @@ export const projects = [
       "Factory pattern for consistent attributes (HP, EXP, Level, Skills)",
       "Turn-based battles where damage reduces HP until one faints",
       "Evolution logic: winners gain EXP and can upgrade to rarer Pokémon",
+      "My Pocket view of every captured Pokémon with its HP, EXP and level",
+      "Check evolution requirements before evolving",
+      "Heal all Pokémon back to full HP while their EXP is kept",
     ],
     challenge:
       "Modelling battle state and evolution logic while persisting everything cleanly through EF Core.",
@@ -281,6 +310,9 @@ export const projects = [
       "Payroll computation by hire type (full-time, part-time, hourly) using enums and async methods",
       "Atomic masterlist updates after payroll, keeping records synchronised",
       "Python functional analysis (filter/map/reduce) for downsizing cost savings",
+      "Separate onboarding files for Corporate Admin, IT and Procurement",
+      "Payroll per employee plus an overall payroll summary",
+      "Retiree list drawn from the masterlist",
     ],
     challenge:
       "Keeping records consistent — updating the masterlist after async payroll processing without corrupting the file.",
@@ -320,8 +352,11 @@ export const projects = [
     tech: ["React", "Python", "Claude AI"],
     features: [
       "Upload or snap a meal photo for a per-item nutritional breakdown with portion estimates",
-      "Daily calorie dashboard tracking intake against a goal",
-      "Meal log and calendar-based history to monitor eating patterns over time",
+      "Calories broken down by each ingredient and item in the meal",
+      "Macronutrient and vitamin totals for every meal",
+      "Daily calorie dashboard tracking intake against a goal based on BMI",
+      "Meal log and calendar-based history covering the past 3 months",
+      "Python proxy server that calls Claude's vision API, with the user setting their own API key",
     ],
     challenge:
       "Turning a food photo into reliable per-item nutrition estimates through a vision model.",
@@ -355,8 +390,11 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Python", "Claude AI"],
     features: [
       "Upload a resume PDF and paste a job posting to compare",
+      "Skills identified automatically from the resume",
       "Detailed fit score with highlighted skill gaps",
       "Suggested improvements to better align the resume with the role",
+      "Live Adzuna job postings pulled and scored against the identified skills",
+      "Direct link to each Adzuna listing to apply, with the user's own Claude API key",
     ],
     challenge:
       "Extracting resume content from PDF and evaluating fit against a job description meaningfully.",
@@ -383,8 +421,12 @@ export const projects = [
       "An AI-powered study companion that turns lecture slides, PDFs, or notes into a complete personalised study kit.",
     tech: ["React", "Claude AI"],
     features: [
-      "Generates flashcards, Q&A pairs, and summaries from uploaded material",
-      "Socratic AI tutor, weakness tracking, and mind maps",
+      "Turns uploaded lecture slides, PDFs or notes into a personalised study kit",
+      "Generates flashcards from the material",
+      "Generates Q&A pairs and summaries",
+      "Socratic AI tutor that guides with questions instead of giving answers away",
+      "Weakness tracking that shows which topics need more work",
+      "Mind maps of each topic",
       "Zen Room with a Pomodoro timer and ambient sounds for focused study",
     ],
     challenge:
@@ -410,6 +452,7 @@ export const projects = [
       "Planned the product backlog across 3 sprints with a 65-hour capacity per sprint",
       "Transferred and organised backlog items and sprint plans in Azure DevOps",
       "Personally planned 5 product backlog items covering real-time usage, room/device breakdowns, daily goals, unit toggling, and usage reminders",
+      "Broke features down and set the MVP scope for each role with MoSCoW prioritisation in Miro",
     ],
 
     challenge:
@@ -481,7 +524,8 @@ export const projects = [
       "Configured automatic daily shutdown through Windows Task Scheduler to reduce unauthorised after-hours access and ensure consistent system resets",
       "Developed an administrative script for modifying scheduled shutdown times when operational requirements changed",
       "Restricted shutdown privileges for the PublicUser account through Local Security Policy to prevent misuse and service disruption",
-      "Documented the security configurations, implementation steps, and rationale as part of the team's security assessment report"
+      "Documented the security configurations, implementation steps, and rationale as part of the team's security assessment report",
+      "Built and tested every configuration in a simulated kiosk environment on VMware Workstation",
     ],
 
     challenge:
@@ -555,7 +599,8 @@ export const projects = [
       "Created interactive flows for exploring hotel facilities, event spaces, restaurants, and the SkyHarmony rooftop bar",
       "Developed user personas and journey maps for vacationers and business travellers",
       "Produced wireframes and a high-fidelity interface with consistent navigation and visual hierarchy",
-      "Connected the screens into a clickable Figma prototype simulating the complete guest experience"
+      "Connected the screens into a clickable Figma prototype simulating the complete guest experience",
+      "Designed dining, entertainment, shopping and business-space sections, such as Lumière Bistro, Strike Lounge bowling, Patisserie Royale and the Oasis WorkPod, with their reservation flows",
     ],
 
     challenge:
