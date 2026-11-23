@@ -4,6 +4,45 @@
 
 export const hackathons = [
   {
+    id: "synapse-linker",
+    title: "Synapse Linker",
+    blurb:
+      "Physical AI for an orthopaedic specialist outpatient clinic in Singapore, built for the SUTD Design·AI Challenge 2026. It predicts each station's queue, picks the fastest order of tests the clinic's rules allow, and has a robot guide walk the patient there. Concept prototype on synthetic data, not clinically validated.",
+    tech: ["Python", "FastAPI", "scikit-learn", "React", "ESP32", "Claude API", "Vercel", "Render"],
+    features: [
+      "Model A predicts every station's waiting time (gradient boosting, MAE 4.3 min against 13.0 for a station-by-hour baseline)",
+      "Model B predicts the chance of a bottleneck in the next 30 minutes (PR-AUC 0.95, precision 0.89, recall 0.84)",
+      "Routing engine applies clinic rules first, then picks the fastest allowed order of X-ray, blood test and ECG, and the room",
+      "EDi-01, an ESP32 robot with a phone as its face, guides patients along a foam-board clinic track and stops when its path is blocked",
+      "EDi-02 virtual guide and EDi Ask me: voice Q&A in English, Chinese, Malay and Tamil, phrased by the Claude API with rule-based safety for medical questions",
+      "Staff wall display with live queues, 30-minute risk and a floor track, plus a presenter console that runs the demo scenes",
+      "Replay on three held-out months: 4.6 min saved per order-flexible visit and 6 min per pre-op visit"
+    ],
+    challenge:
+      "Making the AI's choices safe and believable in a hospital setting: clinic rules and staff overrides always come first, the robot never swerves around people, and results had to be reported honestly, including that only about 8% of visits have a choice of order today.",
+    learned:
+      "Linking machine-learning predictions to a physical robot on a real track, testing models on unseen months instead of tuning to them, and keeping an LLM inside safety rules for patient-facing answers.",
+    links: [
+      { label: "Live dashboard", url: "https://synapse-linker.vercel.app" },
+      { label: "Presenter control", url: "https://synapse-linker.vercel.app/#/presenter" },
+      { label: "Pitch Deck", url: "/project_documents/synapse-linker/synapse_linker_deck.pdf" },
+      { label: "GitHub", url: "https://github.com/lucwu00/SynapseLinker_SUTD_Design_AI_Challenge" }
+    ],
+    images: [
+      [
+        { src: "/project_thumbnails/synapse-linker/dashboard.jpg", label: "Staff wall display with the floor track" },
+        { src: "/project_thumbnails/synapse-linker/presenter.jpg", label: "Presenter control" },
+        { src: "/project_thumbnails/synapse-linker/replay.jpg", label: "Before/after replay on held-out months" },
+        { src: "/project_thumbnails/synapse-linker/edi-screen.jpg", label: "EDi-02 patient screen" },
+      ],
+      [
+        { src: "/project_thumbnails/synapse-linker/screen-stand.jpg", label: "3D-modelling of the screen stand" },
+        { src: "/project_thumbnails/synapse-linker/setup.jpg", label: "Set-up result of the prototype" },
+        { src: "/project_thumbnails/synapse-linker/prototype-testing.jpg", label: "Working prototype in testing" },
+      ],
+    ],
+  },
+  {
     id: "savvymoni",
     title: "SavvyMoni",
     blurb:
