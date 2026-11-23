@@ -25,6 +25,8 @@ export const hackathons = [
     links: [
       { label: "Live dashboard", url: "https://synapse-linker.vercel.app" },
       { label: "Presenter control", url: "https://synapse-linker.vercel.app/#/presenter" },
+      { label: "EDi-01 screen", url: "https://synapse-linker.vercel.app/#/robot/EDi-01" },
+      { label: "EDi-02 screen", url: "https://synapse-linker.vercel.app/#/robot/EDi-02" },
       { label: "Pitch Deck", url: "/project_documents/synapse-linker/synapse_linker_deck.pdf" },
       { label: "GitHub", url: "https://github.com/lucwu00/SynapseLinker_SUTD_Design_AI_Challenge" }
     ],
